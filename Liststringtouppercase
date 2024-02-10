@@ -1,0 +1,24 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Upperconvert {
+
+    public static void main(String[] args) {
+
+        List<String> list= Arrays.asList("aBc","d","ef");
+
+       List<String>convertedlist= list.stream().map(String::toUpperCase).collect(Collectors.toList());
+
+        System.out.println(convertedlist);
+
+    }
+}
+
+
+Output:
+
+C:\Users\91968\.jdks\corretto-1.8.0_392\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=49292:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\charsets.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\access-bridge-64.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\cldrdata.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\dnsns.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\jaccess.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\jfxrt.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\localedata.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\nashorn.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\sunec.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\sunjce_provider.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\sunmscapi.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\sunpkcs11.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\ext\zipfs.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\jce.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\jfr.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\jfxswt.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\jsse.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\management-agent.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\resources.jar;C:\Users\91968\.jdks\corretto-1.8.0_392\jre\lib\rt.jar;C:\Users\91968\IdeaProjects\practices\out\production\practices Upperconvert
+[ABC, D, EF]
+
+Process finished with exit code 0
