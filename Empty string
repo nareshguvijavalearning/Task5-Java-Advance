@@ -1,0 +1,57 @@
+package oopstask;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Emptystringcheck {
+
+	public static void main(String[] args) {
+
+		
+		List<String>list= new ArrayList<String>(5);
+		
+		list.add("abc");
+		list.add("ac");
+
+		list.add("");
+
+		list.add("dfd");
+
+		list.add("");
+
+		list.add("abc");
+		
+		
+		List<String> nonEmptyStringsList = filterNonEmptyStrings(list);
+
+        // Print the list with non-empty strings
+        System.out.println("List with Non-Empty Strings: " + nonEmptyStringsList);
+    }
+
+    private static List<String> filterNonEmptyStrings(List<String> inputList) {
+        List<String> result = new ArrayList<>();
+        for (String str : inputList) {
+            if (!str.isEmpty()) {
+                result.add(str);
+            }
+        }
+        return result;
+	
+			}
+			}
+		
+Output:
+
+List with Non-Empty Strings: [abc, ac, dfd, abc]
+
+		
+		
+		
+		
+
+
+		
+		
+	
+
+
