@@ -1,0 +1,32 @@
+
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Scanner;
+
+public class Calculateage {
+
+	public static void main(String[] args) {
+
+		Scanner obj = new Scanner(System.in);
+		
+		
+        String birthDateInput = obj.nextLine();
+
+	     LocalDate birthdate = LocalDate.parse(birthDateInput);
+	     LocalDate curDate = LocalDate.now();
+	     
+	     Period age = Period.between(birthdate, curDate);
+	     System.out.println("your age is =" +age.getYears());
+		
+	}
+
+}
+
+
+
+Output:
+
+1992-10-01
+your age is =31
+
